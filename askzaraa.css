@@ -878,6 +878,7 @@ hr {
 
 .stay-connected a {
   text-decoration: underline;
+  color: #d95204;
 }
 
 .stay-connected a:hover {
