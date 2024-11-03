@@ -1059,6 +1059,10 @@ button {
 }
 
 @media only screen and (max-width: 500px) {
+  .support-group-btn {
+    display: none;
+  }
+
   .menu-btn {
     display: inline-block;
   }
@@ -1100,7 +1104,7 @@ button {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-right: 25px;
+    margin-right: 30px;
   }
 
   .hero-image {
@@ -1118,6 +1122,11 @@ button {
 
   .supporting-student-content-card {
     width: 100%;
+  }
+
+  .supporting-student-image img {
+    width: auto;
+    height: 290px;
   }
 
   .home-page-live-chat-heading p {
@@ -1185,6 +1194,19 @@ button {
 }
 
 @media only screen and (max-width: 390px) {
+  .hero-image img {
+    height: 230px;
+  }
+
+  .supporting-student img {
+    height: 230px;
+  }
+
+  .mood-card {
+    width: 280px;
+    height: 430px;
+  }
+
   .home-page-resources-heading p {
     width: 100%;
   }
@@ -1199,5 +1221,155 @@ button {
 
   .home-page-therapists-heading h3 {
     width: 100%;
+  }
+
+  .home-page-resources-see-more-articles {
+    gap: 40px;
+  }
+
+  .home-page-resources-see-more-articles span {
+    font-size: 1rem;
+  }
+
+  .home-page-resources-see-more-articles button {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+  }
+
+  .home-page-therapists-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-page-therapists-stats .circle {
+    height: 170px;
+    width: 170px;
+  }
+
+  .home-page-therapists-stats h4 {
+    font-size: 16px;
+  }
+
+  .circle h5 {
+    font-size: 18px;
+  }
+
+  .home-page-therapists-stats .circle2 {
+    left: 10rem;
+  }
+
+  .home-page-support-group-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .hero-content span {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+
+  .hero-content h2 {
+    width: 95%;
+  }
+  .hero-content p {
+    width: 90%;
+  }
+  .hero-image img {
+    height: 220px;
+  }
+
+  .supporting-student img {
+    height: 220px;
+  }
+
+  .supporting-student-content-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .supporting-student-content-card-design1,
+  .supporting-student-content-card-design2,
+  .supporting-student-content-card-design3 {
+    border: none;
+    border-radius: 10px; /* Reduced border radius */
+    padding: 10px 15px; /* Reduced padding */
+    margin-bottom: 12px; /* Reduced margin between cards */
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-shield-heart,
+  .fa-circle-check,
+  .fa-user-group {
+    font-size: 1.5em;
+    padding: 8px 10px;
+    border-radius: 8px;
+  }
+
+  .mood-card {
+    width: 280px;
+    height: 430px;
+  }
+
+  .home-page-resources-see-more-articles {
+    gap: 40px;
+  }
+
+  .home-page-resources-see-more-articles span {
+    font-size: 1rem;
+  }
+
+  .home-page-resources-see-more-articles button {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+  }
+
+  .home-page-therapists-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-page-therapists-stats .circle {
+    height: 170px;
+    width: 170px;
+  }
+
+  .home-page-therapists-stats h4 {
+    font-size: 16px;
+  }
+
+  .circle h5 {
+    font-size: 18px;
+  }
+
+  .home-page-therapists-stats .circle2 {
+    left: 10rem;
+  }
+
+  .home-page-support-group-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-page-signup-login-button button {
+    padding: 5px 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fff836;
+    color: black;
+    font-size: 18px;
+    transition: 0.15s transform ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   }
 }
