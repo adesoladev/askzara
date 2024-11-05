@@ -26,6 +26,10 @@ span {
   font-size: 18px;
 }
 
+.dash {
+  color: black;
+}
+
 /* Nav */
 .main-nav {
   width: 100%;
@@ -43,31 +47,36 @@ span {
 .main-nav .right-menu {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
-.main-nav h1 {
-  font-size: 23px;
-  position: relative;
-  display: inline-block;
-  font-weight: bold;
+.right-menu .login {
+  background-color: #f6f5dd;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: 0.15s transform ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: radial-gradient(
-    circle,
-    rgba(228, 223, 246, 1) 14%,
-    rgba(226, 224, 249, 1) 49%,
-    rgba(250, 229, 224, 1) 69%,
-    rgba(246, 223, 223, 1) 91%
-  );
-  border-bottom: 4px double #f28b82; /* Double border effect */
-  position: absolute;
-  bottom: -0.3rem; /* Adjust based on spacing needs */
-  left: 0;
+.right-menu .sign-up {
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: 0.15s transform ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.right-menu button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.askzara-logo {
+  height: 45px;
+  height: 45px;
 }
 
 .main-nav ul {
@@ -101,27 +110,10 @@ h1::after {
   display: none;
 }
 
-.support-group-btn {
-  padding: 12px 15px;
-  border: 2px solid #c2327e;
-  border-radius: 10px;
-  background-color: #c2327e;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: 0.15s transform ease;
-}
-
-.support-group-btn:hover {
-  color: yellow;
-  transform: translateY(-8px);
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
 /* Home Page */
 .home-page {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 8rem;
   background-color: #f6f5dd;
 }
@@ -140,11 +132,16 @@ h1::after {
 }
 
 .hero-content span {
-  background-color: #8ab8e0;
-  color: #016e19;
-  font-weight: bold;
-  padding: 10px 15px;
+  font-weight: 500;
+  background-color: white;
+  color: #49a643;
+  padding: 8px 15px;
   border-radius: 20px;
+}
+
+.hero-content span i {
+  color: #f8576a;
+  font-size: 22px;
 }
 
 .hero-content h2 {
@@ -193,7 +190,7 @@ h1::after {
   height: 300px;
   margin-left: 70px;
   border: 2px solid #486ff0;
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -311,7 +308,7 @@ h1::after {
   width: auto;
   height: 300px;
   border: 2px solid #486ff0;
-  border-radius: 60px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -489,11 +486,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.home-page-resources-see-more-articles span {
-  color: #e54847;
-  font-size: 20px;
 }
 
 .home-page-resources-see-more-articles button {
@@ -747,7 +739,7 @@ hr {
 
 .what-people-are-saying-review-arrow i {
   padding: 10px 20px;
-  background-color: #e54847;
+  background-color: #ff6f61;
 }
 
 .what-people-are-saying-review-arrow i:hover {
@@ -761,7 +753,7 @@ hr {
       rgba(255, 222, 221, 0.8),
       rgba(255, 222, 221, 0.8)
     ),
-    url("./assets/loginimage.jpg") no-repeat center/cover;
+    url("Images/loginimage.jpg") no-repeat center/cover;
   background-size: cover;
 }
 
@@ -792,7 +784,34 @@ hr {
   gap: 20px;
 }
 
-.home-page-signup-login-button button {
+.home-page-login-button {
+  font-size: 16px;
+  background-color: #f6f5dd;
+  border: 2px solid #ff6f61;
+  border-radius: 20px;
+  padding: 10px 50px;
+  transition: 0.15s transform ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-page-sign-up-button {
+  font-size: 16px;
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 50px;
+  transition: 0.15s transform ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-page-signup-login-button button:hover {
+  transform: translateY(-8px);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* .home-page-signup-login-button button {
   padding: 10px 50px;
   border: none;
   border-radius: 50px;
@@ -815,7 +834,7 @@ hr {
   transform: translateY(-8px);
   opacity: 0.8;
   cursor: pointer;
-}
+} */
 
 /* Footer */
 .footer {
@@ -844,10 +863,6 @@ hr {
 
 .footer-quote {
   width: 25%;
-}
-
-.footer-quote h3 {
-  margin-bottom: 10px;
 }
 
 .footer-quote p {
@@ -910,6 +925,10 @@ button {
   transition: 0.15s transform ease;
 }
 
+.copyright {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 1024px) {
   .hero-content h2 {
     width: 85%;
@@ -955,11 +974,6 @@ button {
     align-items: center;
   }
 
-  .home-page-resources-see-more-articles {
-    gap: 400px;
-    margin-bottom: 20px;
-  }
-
   .home-page-resources-featured-article-container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
@@ -969,12 +983,31 @@ button {
     height: 700px;
   } */
 
+  .home-page-therapists-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .home-page-therapists-heading h3 {
     width: 80%;
   }
 
+  .home-page-therapists-stats h4 {
+    align-items: center;
+    text-align: center;
+  }
+
   .home-page-support-group-container {
     margin-left: 35px;
+  }
+
+  .home-page-support-group-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .home-page-support-group-content {
@@ -1037,10 +1070,10 @@ button {
     width: 80%;
   }
 
-  .home-page-resources-see-more-articles {
+  /* .home-page-resources-see-more-articles {
     gap: 200px;
     margin-bottom: 20px;
-  }
+  } */
 
   .home-page-therapists-and-support {
     grid-template-columns: 1fr;
@@ -1066,6 +1099,7 @@ button {
 
   .menu-btn {
     display: inline-block;
+    font-size: 18px;
   }
 
   .main-nav ul.main-menu {
@@ -1105,7 +1139,7 @@ button {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 50px;
   }
 
   .hero-image {
@@ -1143,10 +1177,10 @@ button {
     width: 90%;
   }
 
-  .home-page-resources-see-more-articles {
+  /* .home-page-resources-see-more-articles {
     gap: 70px;
     margin-bottom: 20px;
-  }
+  } */
 
   .home-page-resources-featured-article-container {
     grid-template-columns: 1fr;
@@ -1159,6 +1193,10 @@ button {
 
   .what-people-are-saying-card {
     grid-template-columns: 1fr;
+  }
+
+  .home-page-signup-login-content p {
+    width: 80%;
   }
 
   .footer-inner {
@@ -1194,7 +1232,34 @@ button {
   }
 }
 
+@media only screen and (max-width: 435px) {
+  .right-menu .login {
+    padding: 10px 15px;
+  }
+
+  .right-menu .sign-up {
+    padding: 10px 15px;
+  }
+  .main-nav .right-menu {
+    margin-right: 40px;
+  }
+  .home-page-therapists-stats .circle {
+    height: 200px;
+    width: 200px;
+  }
+
+  .home-page-therapists-stats .circle2 {
+    position: absolute;
+    top: 3.3rem;
+    left: 11rem;
+  }
+}
+
 @media only screen and (max-width: 390px) {
+  .main-nav .right-menu {
+    margin-right: 45px;
+  }
+
   .hero-image img {
     height: 230px;
   }
@@ -1224,13 +1289,13 @@ button {
     width: 100%;
   }
 
-  .home-page-resources-see-more-articles {
+  /* .home-page-resources-see-more-articles {
     gap: 40px;
   }
 
   .home-page-resources-see-more-articles span {
     font-size: 1rem;
-  }
+  } */
 
   .home-page-resources-see-more-articles button {
     padding: 10px 10px;
@@ -1266,6 +1331,14 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .home-page-login-button {
+    padding: 8px 30px;
+  }
+
+  .home-page-sign-up-button {
+    padding: 8px 30px;
   }
 }
 
@@ -1319,13 +1392,13 @@ button {
     height: 430px;
   }
 
-  .home-page-resources-see-more-articles {
+  /* .home-page-resources-see-more-articles {
     gap: 40px;
   }
 
   .home-page-resources-see-more-articles span {
     font-size: 1rem;
-  }
+  } */
 
   .home-page-resources-see-more-articles button {
     padding: 10px 10px;
@@ -1362,15 +1435,24 @@ button {
     align-items: center;
     text-align: center;
   }
+}
 
-  .home-page-signup-login-button button {
-    padding: 5px 40px;
-    border: none;
-    border-radius: 50px;
-    background-color: #fff836;
-    color: black;
-    font-size: 18px;
-    transition: 0.15s transform ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+@media only screen and (max-width: 368px) {
+  .askzara-logo {
+    height: 37px;
+    height: 37px;
+  }
+
+  .right-menu .login {
+    padding: 10px 13px;
+  }
+
+  .right-menu .sign-up {
+    padding: 10px 13px;
+  }
+
+  .newsletter input,
+  button {
+    padding: 15px 10px;
   }
 }
