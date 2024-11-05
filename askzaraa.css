@@ -753,7 +753,7 @@ hr {
       rgba(255, 222, 221, 0.8),
       rgba(255, 222, 221, 0.8)
     ),
-    url("Images/loginimage.jpg") no-repeat center/cover;
+    url("./assets/loginimage.jpg") no-repeat center/cover;
   background-size: cover;
 }
 
