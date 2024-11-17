@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="askzaraa.css" />
+    <title>Sign Up / Login</title>
+  </head>
+  <body>
+    <section class="sign-up-login-container">
+      <div class="sign-up-login-heading">
+        <span>Sign Up / Login</span>
+        <h2>Create Your Account for Personalized Support</h2>
+        <p>
+          Get the full experience on Ask Zara by creating an account or logging
+          in. With your own account, you can save your favorite resources, keep
+          track of your chats, and access personalized support anytime you need
+          it. Logging in allows us to tailor recommendations and resources
+          specifically to you, helping you find the support and information most
+          relevant to your mental wellness journey. Create your account today to
+          connect with a community that understands you and access tools
+          designed to make a difference.
+        </p>
+      </div>
+      <div class="what-you-get">
+        <h2>What You Get with an Account</h2>
+
+        <p>
+          <i class="fa-solid fa-hand-point-right"></i>
+          Access to all platform features, including live chat and support
+          groups.
+        </p>
+
+        <p>
+          <i class="fa-solid fa-hand-point-right"></i>
+          Ability to browse through our extensive resources and access
+          personalized recommendations.
+        </p>
+
+        <p>
+          <i class="fa-solid fa-hand-point-right"></i>
+          The option to access qualified mental health professionals, including
+          counselors, therapists, and doctors, who specialize in student mental
+          health
+        </p>
+      </div>
+      <div class="sign-up-login-form-container">
+        <!-- Login Form -->
+        <div class="form-container">
+          <h2>Login</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p>Not a member? <a href="#">Sign up now</a></p>
+          </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form-container" id="signup">
+          <h2>Sign Up</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="signup-name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="matric">Matric Number</label>
+              <input
+                type="text"
+                id="matric"
+                name="matric"
+                placeholder="Enter your matric number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="level">Student Level</label>
+              <select id="level" name="level" required>
+                <option value="">Select your level</option>
+                <option value="100">100 Level</option>
+                <option value="200">200 Level</option>
+                <option value="300">300 Level</option>
+                <option value="400">400 Level</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="signup-password"
+                name="password"
+                placeholder="Create a password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <p>
+              By creating an account, you agree with our
+              <a href="#">Terms of Service.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
